@@ -1,0 +1,44 @@
+<h1>Public::Customers#edit</h1>
+<p>Find me in app/views/public/customers/edit.html.erb</p>
+
+<h1>会員情報編集</h1>
+
+<% if @customer.errors.any? %>
+  <%= @customer.errors.count %>errors prohibited this obj from being saved:
+  <ul>
+    <% @customer.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<%= form_with model: @customer, url: public_customers_path, local: true do |f| %>
+  <div class="field">
+    名前<%= f.label '(性)' %><%= f.text_field :last_name %>
+    <%= f.label '(名)'%><%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+      フリガナ<%= f.label '(セイ)' %><%= f.text_field :last_name_kana %>
+      <%= f.label '(メイ)'%><%= f.text_field :first_name_kana %>
+  </div>
+  <div class="field">
+    <%= f.label :メールアドレス %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+  <div class="field">
+      郵便番号(ハイフンなし)<%= f.text_field :postal_code %>
+  </div>
+  <div class="field">
+      住所<%= f.text_field :address %>
+  </div>
+  <div class="field">
+      電話番号(ハイフンなし)<%= f.text_field :telephone_number %>
+  </div>
+  <div class="actions">
+    <%= f.submit "編集内容を保存" %>
+  </div>
+  <div class="actions">
+    <% link_to '退会する', public_customers_unsubscribe_path %>
+  </div>
+<% end %>
