@@ -4741,3 +4741,1186 @@ Processing by Public::CustomersController#update as HTML
 Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 10576)
 
 
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:00:14 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.8ms | Allocations: 341)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 7853)
+Completed 200 OK in 22ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 11213)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:00:15 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 13523)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.6ms | Allocations: 14054)
+
+
+Started GET "/public/customers" for 111.239.173.82 at 2023-02-26 05:00:17 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 443)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4078)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 7067)
+
+
+Started GET "/public/customers" for 111.239.173.82 at 2023-02-26 05:17:12 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 717)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ec2-user/environment/nagano_cake/public/packs
+[Webpacker] warning ../../package.json: No license field
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+302 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 302:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+498 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 498:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($custom-control-indicator-size, 2) or calc($custom-control-indicator-size / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+568 │ $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
+    │                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 568:49  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+713 │ $nav-divider-margin-y:              $spacer / 2 !default;
+    │                                     ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 713:37  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+718 │ $navbar-padding-y:                  $spacer / 2 !default;
+    │                                     ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 718:37  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+WARNING: 63 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: e05f4f06f8de35befa97
+Version: webpack 4.46.0
+Time: 7688ms
+Built at: 02/26/2023 5:17:21 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-1da01c891460861e0609.js   1.72 MiB  application  [emitted] [immutable]  application
+js/application-1da01c891460861e0609.js.map   1.83 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-1da01c891460861e0609.js js/application-1da01c891460861e0609.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 587 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 668 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 474 bytes {application} [built]
+    + 118 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8935.4ms | Allocations: 8044)
+Completed 200 OK in 8956ms (Views: 8937.3ms | ActiveRecord: 0.5ms | Allocations: 21703)
+
+
+Started GET "/public/customers/edit" for 111.239.173.82 at 2023-02-26 05:17:40 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::CustomersController#edit as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:7:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering public/customers/edit.html.erb within layouts/application
+  Rendered public/customers/edit.html.erb within layouts/application (Duration: 11.4ms | Allocations: 7072)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 10376)
+Completed 200 OK in 21ms (Views: 16.4ms | ActiveRecord: 0.1ms | Allocations: 12716)
+
+
+Started PATCH "/public/customers" for 111.239.173.82 at 2023-02-26 05:17:48 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::CustomersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "customer"=>{"last_name"=>"佐藤", "first_name"=>"大輝", "last_name_kana"=>"サトウ", "first_name_kana"=>"ダイキ", "email"=>"satou@gmail.com", "postal_code"=>"0112334", "address"=>"宇宙のまで", "telephone_number"=>"090111111111"}, "commit"=>"編集内容を保存"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:14:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/public/customers_controller.rb:15:in `update'
+  [1m[36mCustomer Update (0.2ms)[0m  [1m[33mUPDATE "customers" SET "address" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["address", "宇宙のまで"], ["updated_at", "2023-02-26 05:17:48.113403"], ["id", 1]]
+  ↳ app/controllers/public/customers_controller.rb:15:in `update'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/public/customers_controller.rb:15:in `update'
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/public/customers
+Completed 302 Found in 16ms (ActiveRecord: 4.6ms | Allocations: 6651)
+
+
+Started GET "/public/customers" for 111.239.173.82 at 2023-02-26 05:17:48 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3323)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 4595)
+
+
+Started GET "/public/customers" for 111.239.173.82 at 2023-02-26 05:18:46 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 407)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4283)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 6475)
+
+
+Started DELETE "/customers/sign_out" for 111.239.173.82 at 2023-02-26 05:23:48 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 303 See Other in 9ms (ActiveRecord: 0.1ms | Allocations: 2910)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:23:48 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 4329)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 5860)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:24:34 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 1.1ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4192)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 5573)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:27:20 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4193)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 5585)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:27:23 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3371)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 3819)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:30:29 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.5ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4194)
+Completed 200 OK in 10ms (Views: 8.4ms | Allocations: 5530)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:31:21 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4191)
+Completed 200 OK in 11ms (Views: 9.5ms | Allocations: 5566)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:32:12 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4191)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 5566)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:32:40 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3368)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 3806)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:32:57 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4192)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 5526)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:37:48 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4194)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 5568)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:39:02 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.5ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4213)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 5595)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:40:14 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 4194)
+Completed 200 OK in 8ms (Views: 6.8ms | Allocations: 5570)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:40:37 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4209)
+Completed 200 OK in 8ms (Views: 6.8ms | Allocations: 5584)
+
+
+Started GET "/" for 111.239.173.82 at 2023-02-26 05:40:49 +0000
+Cannot render console from 111.239.173.82! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4198)
+Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 5579)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 02:41:41 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 3.8ms | Allocations: 341)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 7182)
+Completed 200 OK in 87ms (Views: 60.1ms | ActiveRecord: 0.0ms | Allocations: 10542)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 02:41:42 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3372)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 3868)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 02:47:08 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4199)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 5637)
+
+
+Started GET "/customers/sign_up" for 111.239.181.48 at 2023-03-05 02:49:08 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::RegistrationsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering public/registrations/new.html.erb within layouts/application
+  Rendered public/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 278)
+  Rendered public/shared/_links.html.erb (Duration: 1.3ms | Allocations: 375)
+  Rendered public/registrations/new.html.erb within layouts/application (Duration: 27.7ms | Allocations: 6156)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 9719)
+Completed 200 OK in 89ms (Views: 40.7ms | ActiveRecord: 1.1ms | Allocations: 21837)
+
+
+Started GET "/customers/sign_in" for 111.239.181.48 at 2023-03-05 02:49:15 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/sessions/new.html.erb within layouts/application
+  Rendered public/shared/_links.html.erb (Duration: 0.3ms | Allocations: 191)
+  Rendered public/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5068)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 7242)
+
+
+Started GET "/customers/sign_in" for 111.239.181.48 at 2023-03-05 02:49:15 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/sessions/new.html.erb within layouts/application
+  Rendered public/shared/_links.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered public/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 965)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4307)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5028)
+
+
+Started POST "/customers/sign_in" for 111.239.181.48 at 2023-03-05 02:53:55 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "customer"=>{"email"=>"satou@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."email" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["email", "satou@gmail.com"], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 303 See Other in 269ms (ActiveRecord: 1.8ms | Allocations: 15374)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 02:53:55 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 57)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 4812)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.2ms | Allocations: 5587)
+
+
+Started GET "/public/customers" for 111.239.181.48 at 2023-03-05 02:54:17 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 443)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3932)
+Completed 200 OK in 46ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 6191)
+
+
+Started GET "/admin/sign_in" for 111.239.181.48 at 2023-03-05 02:55:14 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_in"):
+  
+Started GET "/admins/sign_in" for 111.239.181.48 at 2023-03-05 02:55:22 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 1.1ms | Allocations: 181)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1842)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 6386)
+Completed 200 OK in 25ms (Views: 16.5ms | ActiveRecord: 0.7ms | Allocations: 11882)
+
+
+Started POST "/admins/sign_in" for 111.239.181.48 at 2023-03-05 02:55:31 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"sabaranran@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (1.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "sabaranran@gmail.com"], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/admin
+Completed 303 See Other in 248ms (ActiveRecord: 1.3ms | Allocations: 3141)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 02:55:31 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.8ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4770)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 6007)
+
+
+Started DELETE "/customers/sign_out" for 111.239.181.48 at 2023-03-05 02:58:15 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 303 See Other in 14ms (ActiveRecord: 0.3ms | Allocations: 6280)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 02:58:15 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4242)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 5668)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 03:00:14 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3793)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4896)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 03:01:06 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4194)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 5596)
+
+
+Started GET "/customers/sign_in" for 111.239.181.48 at 2023-03-05 03:02:45 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/sessions/new.html.erb within layouts/application
+  Rendered public/shared/_links.html.erb (Duration: 0.7ms | Allocations: 315)
+  Rendered public/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1809)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 5789)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 8383)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 03:02:56 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.8ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3808)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4942)
+
+
+Started GET "/admin/sign_in" for 111.239.181.48 at 2023-03-05 03:03:02 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_in"):
+  
+Started GET "/admins/sign_in" for 111.239.181.48 at 2023-03-05 03:03:09 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.3ms | Allocations: 170)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1640)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5237)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 6577)
+
+
+Started POST "/admins/sign_in" for 111.239.181.48 at 2023-03-05 03:03:18 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"sabaranran@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "sabaranran@gmail.com"], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/admin
+Completed 303 See Other in 246ms (ActiveRecord: 0.1ms | Allocations: 3861)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 03:03:18 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:34
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4230)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 4628)
+
+
+Started DELETE "/admins/sign_out" for 111.239.181.48 at 2023-03-05 03:56:16 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/admins/sign_in
+Completed 303 See Other in 6ms (ActiveRecord: 0.4ms | Allocations: 3067)
+
+
+Started GET "/admins/sign_in" for 111.239.181.48 at 2023-03-05 03:56:17 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.6ms | Allocations: 170)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1655)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1803)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 4001)
+
+
+Started GET "/admins/sign_in" for 111.239.181.48 at 2023-03-05 03:56:26 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 963)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1044)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1754)
+
+
+Started GET "/admins/sign_in" for 111.239.181.48 at 2023-03-05 03:56:39 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 963)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1044)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1659)
+
+
+Started GET "/admins" for 111.239.181.48 at 2023-03-05 03:56:44 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admins"):
+  
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 03:56:49 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 236)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1328)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 03:57:10 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 119)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 566)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 03:57:53 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 119)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:02:39 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.8ms | Allocations: 344)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 514)
+Completed 200 OK in 10ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3998)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:02:44 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 243)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1429)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:02:45 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 120)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 577)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:02:59 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 119)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:03:43 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 119)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 514)
+
+
+Started GET "/admins/sign_in" for 111.239.181.48 at 2023-03-05 04:03:47 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.3ms | Allocations: 214)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 4035)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4125)
+Completed 200 OK in 17ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 11458)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:06:40 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 147)
+Completed 200 OK in 4ms (Views: 3.1ms | Allocations: 921)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:07:04 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 119)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 561)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:11:08 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 1.0ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 536)
+Completed 200 OK in 12ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 4913)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:11:10 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 121)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 647)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:33:15 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.9ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 518)
+Completed 200 OK in 10ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3885)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:33:17 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 121)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 647)
+
+
+Started GET "/" for 111.239.181.48 at 2023-03-05 04:34:56 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 120)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 519)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:35:00 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 149)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 238)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1480)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:36:14 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.5ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6889)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 8306)
+
+
+Started GET "/customers/sign_in" for 111.239.181.48 at 2023-03-05 04:36:21 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/sessions/new.html.erb within layouts/application
+  Rendered public/shared/_links.html.erb (Duration: 1.5ms | Allocations: 690)
+  Rendered public/sessions/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 7603)
+Completed 200 OK in 32ms (Views: 19.7ms | ActiveRecord: 0.4ms | Allocations: 19471)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:37:39 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 3741)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 5159)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>NaganoCake</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <%= link_to 'LOGO', root_path %>
+      </div>
+      <ul>
+        <% elsif admin_signed_in? %>
+        <li>
+          商品一覧
+        </li>
+        <li>
+          会員一覧
+        </li>
+        <li>
+          注文履歴一覧
+        </li>
+        <li>
+          ジャンル一覧
+        </li>
+        <li>
+          <%= link_to 'ログアウト', destroy_admin_session_path, method: :delete %>
+        </li>
+        <% if customer_signed_in? %>
+          <li>
+            <%= link_to 'マイページ', public_customers_path %>
+          </li>
+          <li>
+            商品一覧
+          </li>
+          <li>
+            カート
+          </li>
+          <li>
+            <%= link_to 'ログアウト',  destroy_customer_session_path, method: :delete %>
+          </li>
+        <% else %>
+        <li>
+          About
+        </li>
+        <li>
+          商品一覧
+        </li>
+        <li>
+          <%= link_to '新規登録', new_customer_registration_path %>
+        </li>
+        <li>
+          <%= link_to 'ログイン', new_customer_session_path %>
+        </li>
+        <% end %>
+      </ul>
+    </header>
+    <%= yield %>
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>NaganoCake</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:        <header>
+14:          <div>
+15:            <%= link_to 'LOGO', root_path %>
+16:          </div>
+17:          <ul>
+18:            <% elsif admin_signed_in? %>
+19:            <li>
+20:              商品一覧
+21:            </li>
+22:            <li>
+23:              会員一覧
+24:            </li>
+25:            <li>
+26:              注文履歴一覧
+27:            </li>
+28:            <li>
+29:              ジャンル一覧
+30:            </li>
+31:            <li>
+32:              <%= link_to 'ログアウト', destroy_admin_session_path, method: :delete %>
+33:            </li>
+34:            <% if customer_signed_in? %>
+35:              <li>
+36:                <%= link_to 'マイページ', public_customers_path %>
+37:              </li>
+38:              <li>
+39:                商品一覧
+40:              </li>
+41:              <li>
+42:                カート
+43:              </li>
+44:              <li>
+45:                <%= link_to 'ログアウト',  destroy_customer_session_path, method: :delete %>
+46:              </li>
+47:            <% else %>
+48:            <li>
+49:              About
+50:            </li>
+51:            <li>
+52:              商品一覧
+53:            </li>
+54:            <li>
+55:              <%= link_to '新規登録', new_customer_registration_path %>
+56:            </li>
+57:            <li>
+58:              <%= link_to 'ログイン', new_customer_session_path %>
+59:            </li>
+60:            <% end %>
+61:          </ul>
+62:        </header>
+63:        <%= yield %>
+64:      </body>
+65:    </html>
+  
+app/views/layouts/application.html.erb:18: syntax error, unexpected `elsif', expecting `end'
+app/views/layouts/application.html.erb:18: syntax error, unexpected `elsif', expecting `end'
+app/views/layouts/application.html.erb:18: syntax error, unexpected `elsif', expecting `end'
+app/views/layouts/application.html.erb:18: syntax error, unexpected `elsif', expecting `end'
+app/views/layouts/application.html.erb:18: syntax error, unexpected `elsif', expecting `end'
+app/views/layouts/application.html.erb:18: syntax error, unexpected `elsif', expecting `end'
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:38:11 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4206)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 5607)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:39:46 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4191)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5583)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:42:56 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3368)
+Completed 200 OK in 9ms (Views: 7.4ms | Allocations: 3805)
+
+
+Started GET "/customers/sign_in" for 111.239.181.48 at 2023-03-05 04:42:59 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Public::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/sessions/new.html.erb within layouts/application
+  Rendered public/shared/_links.html.erb (Duration: 0.9ms | Allocations: 306)
+  Rendered public/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 5282)
+Completed 200 OK in 18ms (Views: 16.5ms | Allocations: 7280)
+
+
+Started GET "/admins/sign_in" for 111.239.181.48 at 2023-03-05 04:43:08 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.3ms | Allocations: 182)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1848)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5410)
+Completed 200 OK in 21ms (Views: 11.4ms | ActiveRecord: 0.7ms | Allocations: 12286)
+
+
+Started POST "/admins/sign_in" for 111.239.181.48 at 2023-03-05 04:43:15 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"sabaranran@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "sabaranran@gmail.com"], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/admin
+Completed 303 See Other in 250ms (ActiveRecord: 0.2ms | Allocations: 5607)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:43:16 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4545)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 4997)
+
+
+Started DELETE "/admins/sign_out" for 111.239.181.48 at 2023-03-05 04:43:30 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/admins/sign_in
+Completed 303 See Other in 6ms (ActiveRecord: 0.1ms | Allocations: 2816)
+
+
+Started GET "/admins/sign_in" for 111.239.181.48 at 2023-03-05 04:43:30 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4510)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5234)
+
+
+Started POST "/admins/sign_in" for 111.239.181.48 at 2023-03-05 04:47:46 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"sabaranran@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "sabaranran@gmail.com"], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/admin
+Completed 303 See Other in 264ms (ActiveRecord: 0.9ms | Allocations: 8934)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:47:47 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 57)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4711)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 5479)
+
+
+Started DELETE "/admins/sign_out" for 111.239.181.48 at 2023-03-05 04:47:56 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b3033ab2912e4204be8c84868af345e5.vfs.cloud9.us-east-1.amazonaws.com/admins/sign_in
+Completed 303 See Other in 5ms (ActiveRecord: 0.1ms | Allocations: 2167)
+
+
+Started GET "/admins/sign_in" for 111.239.181.48 at 2023-03-05 04:47:56 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1177)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4626)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5311)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:48:00 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3375)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3769)
+
+
+Started GET "/admin" for 111.239.181.48 at 2023-03-05 04:48:31 +0000
+Cannot render console from 111.239.181.48! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/homes/top.html.erb within layouts/application
+  Rendered admin/homes/top.html.erb within layouts/application (Duration: 0.2ms | Allocations: 57)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3736)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 4505)
+
+

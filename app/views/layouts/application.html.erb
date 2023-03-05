@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -16,7 +15,23 @@
         <%= link_to 'LOGO', root_path %>
       </div>
       <ul>
-        <% if customer_signed_in? %>
+        <% if admin_signed_in? %>
+            <li>
+              商品一覧
+            </li>
+            <li>
+              会員一覧
+            </li>
+            <li>
+              注文履歴一覧
+            </li>
+            <li>
+              ジャンル一覧
+            </li>
+            <li>
+              <%= link_to 'ログアウト', destroy_admin_session_path, method: :delete %>
+            </li>
+        <% elsif customer_signed_in? %>
           <li>
             <%= link_to 'マイページ', public_customers_path %>
           </li>
@@ -29,35 +44,19 @@
           <li>
             <%= link_to 'ログアウト',  destroy_customer_session_path, method: :delete %>
           </li>
-        <% elsif admin_signed_in? %>
-        <li>
-          商品一覧
-        </li>
-        <li>
-          会員一覧
-        </li>
-        <li>
-          注文履歴一覧
-        </li>
-        <li>
-          ジャンル一覧
-        </li>
-        <li>
-          <%= link_to 'ログアウト', destroy_admin_session_path, method: :delete %>
-        </li>
         <% else %>
-        <li>
-          About
-        </li>
-        <li>
-          商品一覧
-        </li>
-        <li>
-          <%= link_to '新規登録', new_customer_registration_path %>
-        </li>
-        <li>
-          <%= link_to 'ログイン', new_customer_session_path %>
-        </li>
+            <li>
+              About
+            </li>
+            <li>
+              商品一覧
+            </li>
+            <li>
+              <%= link_to '新規登録', new_customer_registration_path %>
+            </li>
+            <li>
+              <%= link_to 'ログイン', new_customer_session_path %>
+            </li>
         <% end %>
       </ul>
     </header>

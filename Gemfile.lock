@@ -62,10 +62,7 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
-<<<<<<< HEAD
-=======
     bcrypt (3.1.18)
->>>>>>> develop
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
